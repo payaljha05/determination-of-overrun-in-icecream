@@ -86,7 +86,7 @@ body {
 #cup-empty {
   bottom: 12vh;
   left: 40vw;
-  z-index: 3;
+  z-index: 2;
 }
 #cup-img {
   width: 7vw;
@@ -124,7 +124,7 @@ body {
 #freezer {
   bottom: 3vh;
   left: 5vw;
-  z-index: 2;
+  z-index: 3;
 }
 #freezer-img {
   width: 20vw;
