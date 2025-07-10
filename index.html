@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ice Cream Overrun Simulation</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="instruction-box">Click ON button to power the weighing machine.</div>
+
+    <!-- Weighing Machine -->
+    <div class="instrument" id="weighing-machine">
+      <img src="Images/wheighing-machine.png" alt="weighing machine" />
+      <div id="scale-display">OFF</div>
+      <button id="power-btn">ON</button>
+      <button id="tare-btn">TARE</button>
+    </div>
+
+    <!-- Empty Cup -->
+    <div class="instrument" id="cup-empty">
+      <img src="Images/bowl_empty.png" alt="empty cup" />
+    </div>
+
+    <!-- Ice Cream Mix Bowl -->
+    <div class="instrument" id="mix-bowl">
+      <img src="Images/bowl_mix.png" alt="big bowl" />
+    </div>
+
+    <!-- Filled Cup -->
+    <!-- <div class="instrument" id="cup-filled">
+      <img src="Images/bowl_mix.png" alt="filled cup" />
+    </div> -->
+
+    <!-- Spatula -->
+    <div class="instrument" id="spatula">
+      <img src="Images/spatula.png" alt="spatula" />
+    </div>
+
+     <!-- 1/3 Mix Bowl 
+     <div class="instrument" id="cup-filled_1">
+      <img src="Images/mix_bowl1.png" alt="1/3 mix-bowl" />
+    </div> 
+    -->
+
+    <!-- 2/3 Mix Bowl 
+     <div class="instrument" id="cup-filled_2">
+      <img src="Images/mix_bowl2.png" alt="2/3 mix-bowl" />
+    </div>
+    --> 
+
+    <!-- Freezer -->
+    <div class="instrument" id="freezer">
+      <img src="Images/freezer_closed.png" alt="Freezer Closed" id="freezer-img" />
+    </div>
+
+    <!-- Frozen Cup -->
+    <div class="instrument" id="cup-frozen" style="display: none;">
+      <img src="Images/cup_icecream.png" alt="frozen cup" />
+    </div>
+
+    <!-- Result -->
+    <div id="result-box"></div>
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100%;
+   margin: 0;
+  background: url("../Images/bg lab.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.instrument {
+  position: absolute;
+  transition: transform 1s ease-in-out;
+  z-index: 1;
+}
+
+.instrument img {
+  width: 8vw;
+  cursor: pointer;
+}
+
+#instruction-box {
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  width: 100vw;
+  height: 5vh;
+  padding: 1.5vh, 2vw;
+  background: rgb(255, 254, 254);
+  color: rgba(8, 5, 5, 0.929);
+  font-size: 1.2rem;
+  text-align: left;
+  z-index: 999;
+}
+
+/* Weighing machine */
+#weighing-machine {
+  bottom: 16vh;
+  left: 80vw;
+}
+#weighing-machine img {
+  width: 14vw;
+}
+
+#scale-display {
+  position: absolute;
+  top: 6.1vh;
+  left: 4.6vw;
+  width: 4.4vw;
+  height: 3.5vh;
+  background-color: black;
+  color: lime;
+  text-align: center;
+  line-height: 3vh;
+  font-family: 'Courier New', monospace;
+  font-size: 1.5vh;
+  border-radius: 2px;
+}
+
+#power-btn, #tare-btn {
+  position: absolute;
+  top: 7vh;
+  font-size: 1.2vh;
+  padding: 0.5vh 0.8vw;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#power-btn { left: 1.2vw; }
+#tare-btn { left: 9.3vw; }
+
+#cup-empty {
+  bottom: 12vh;
+  left: 40vw;
+  z-index: 3;
+}
+#cup-img {
+  width: 7vw;
+}
+
+/* Mix Bowl */
+#mix-bowl {
+  bottom: 12vh;
+  left: 55vw;
+}
+#mix-bowl img {
+  width: 12vw;
+}
+
+/* Filled cup */
+#cup-filled {
+  bottom: 12vh;
+  left: 58vw;
+}
+#cup-filled img {
+  width: 7vw;
+}
+
+/* Spatula */
+#spatula {
+  bottom: 12vh;
+  left: 70vw;
+}
+#spatula img {
+  width: 8vw;
+  /* transform: rotate(29deg); */
+}
+
+/* Freezer */
+#freezer {
+  bottom: 3vh;
+  left: 5vw;
+  z-index: 2;
+}
+#freezer-img {
+  width: 20vw;
+}
+
+/* Frozen cup */
+#cup-frozen {
+  bottom: 4vh;
+  left: 6vw;
+  z-index: 3;
+}
+#cup-frozen img {
+  width: 7vw;
+}
+
+#result-box {
+  position: fixed;
+  bottom: 5vh;
+  left: 33vw;
+  width: 35vw;
+  background: #fff;
+  padding: 1vh;
+  border: 2px solid #444;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  display: none;
+}
