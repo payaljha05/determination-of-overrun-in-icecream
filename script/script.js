@@ -92,12 +92,12 @@ spatula.addEventListener("click", async () => {
     await delay(1000);
 
     if (i === 1) {
-      cupEmpty.querySelector("img").src = "images/mix_bowl1.png";
+      cupEmpty.querySelector("img").src = "../images/mix_bowl1.png";
     } else if (i === 2) {
-      cupEmpty.querySelector("img").src = "images/mix_bowl2.png";
+      cupEmpty.querySelector("img").src = "../images/mix_bowl2.png";
     } else {
-      cupEmpty.querySelector("img").src = "images/bowl_mix.png";
-      mixBowl.querySelector("img").src = "images/mix_bowl2.png";
+      cupEmpty.querySelector("img").src = "../images/bowl_mix.png";
+      mixBowl.querySelector("img").src = "../images/mix_bowl2.png";
     }
 
     spatula.style.transform = "translate(-8vw, -8vh)";
@@ -113,15 +113,15 @@ spatula.addEventListener("click", async () => {
 
 freezer.addEventListener("click", async () => {
   if (step === 5) {
-    freezerImg.src = "images/freezer_open.png";
+    freezerImg.src = "../images/freezer_open.png";
     step = 6;
     stepInstruction(step);
   } else if (step === 7) {
-    freezerImg.src = "images/freezer_closed.png";
+    freezerImg.src = "../images/freezer_closed.png";
     startFreezingCountdown(20);
     step = 8;
   } else if (step === 8) {
-    freezerImg.src = "images/freezer_open.png";
+    freezerImg.src = "../images/freezer_open.png";
     cupFrozen.style.display = "block";
     cupFrozen.style.transform = "translate(10vw, -30vh)";
     step = 9;
